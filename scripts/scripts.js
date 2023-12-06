@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function() {
 
     /****************** YOUR NAME: Zi Liang
 
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let modelButton = document.getElementById("model-button");
 
     function changeModel() {
-        modelSpan = document.getElementById("model-text");
+        let modelSpan = document.getElementById("model-text");
 
         if (modelName === "XYZ") {
             modelName = "CPRG";
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     */
 
     // INSERT YOUR CODE HERE
-    let durationButton = document.getElementById("duration-button")
+    let durationButton = document.getElementById("duration-button");
 
     function changeDuration() {
         let durationSpan = document.getElementById("duration-text");
@@ -107,6 +107,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         recalculate();
     }
 
-    durationButton.addEventListener("click", changeDuration)
+    durationButton.addEventListener("click", changeDuration);
 
 });
